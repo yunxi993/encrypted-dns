@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadUUID</key>
+    <string>eb8fd2c6-5f0b-4d6e-bc53-f79f7e973fa4</string>
+    <key>PayloadType</key>
+    <string>com.apple.dnsSettings.managed</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadIdentifier</key>
+    <string>com.example.ali-doh</string>
+    <key>PayloadDisplayName</key>
+    <string>AliDNS DoH</string>
+    <key>PayloadDescription</key>
+    <string>Configure DoH for AliDNS</string>
+    <key>PayloadOrganization</key>
+    <string>YourOrg</string>
+    <key>PayloadContent</key>
+    <array>
+      <dict>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>2400:3200::1</string>
+          </array>
+          <key>ServerURL</key>
+          <string>https://[2400:3200::1]/dns-query</string>
+        </dict>
+        <key>InterfaceName</key>
+        <string>any</string>
+      </dict>
+    </array>
+  </dict>
+</plist>
